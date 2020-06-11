@@ -1,41 +1,61 @@
-body {
+/* Where I only 3 values for hex, if they're true grays where all 6 digits are the same, you can shorthand it to only 3 digits: #666666 => #666 */
 
+body {
+    background-color: #999;
+    padding-left: 20px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 28px;
+    font-family: sans-serif;
 }
 
 h1, h2 {
-
+    color: #9acd32;
+    text-decoration: underline;
 }
 
 a:link {
-
+    text-decoration: none;
+    color: #9acd32;
 }
 
 a:visited {
-
+    color: #483d8b;
 }
 
 a:hover {
-
+    text-decoration: underline;
+    color: #008080;
 }
 
-
 #imagecaption {
-
+    background-color: #333;
+    border: 1px solid #666;
+    width: 600px;
+    padding: 20px;
 }
 
 .caption {
-
+    line-height: 16px;
+    color: #fff;
 }
 
-
 #title, #entry, #references {
-
+    width: 600px;
+    padding: 20px 20px 20px 4px;
 }
 
 #contents {
-
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 150px;
+    padding: 0 20px;
+    margin: 40px 40px 0 0;
+    background-color: #666;
 }
 
 #contents ol {
-
+    color: #9acd32;
+    padding-left: 16px;
 }
