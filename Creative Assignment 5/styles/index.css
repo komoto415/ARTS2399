@@ -1,0 +1,66 @@
+div.banner#index-banner {
+    color: #d8d9fc;
+    background: #581363;
+    font-weight: 700;
+    text-shadow: 5px 5px 0px #382beb, 
+                10px 10px 0px #47428b,
+                15px 15px 0px #466db5, 
+                20px 20px 0px #505aaf, 
+                25px 25px 0px #332d50, 
+                30px 30px 0px #681ac1,
+                35px 35px 0px #491386;
+}
+
+#img-grid {
+    margin-bottom: 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+
+.column {
+    /* 8px required offset to account for left-right padding */
+    flex: calc(25% - 8px);
+    max-width: calc(25% - 8px);
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: calc(50% - 8px);
+        max-width: calc(50% - 8px);
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: calc(100% - 8px);
+        max-width: calc(100% - 8px);
+    }
+}
+
+#check-out {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30px;
+    gap: 10px;
+}
+
+.check-out-content {
+    text-align: center;
+}
